@@ -53,6 +53,22 @@ int main()
 		}
 	}
 
+	else if (weight < 1500) {
+		if ((lenth_A_B <= (capacity / 7)) && (lenth_B_C <= (capacity / 7))) {
+			need_B_C = lenth_B_C * 7;
+
+			need_fuel = need_B_C - (capacity - lenth_A_B * 7);
+			(need_fuel > 0) ? cout << "You should refuel " << need_fuel << " litrs" << endl :
+				cout << "You don't need to refuel(0)\n";
+
+		}
+
+		else {
+			cout << "Flight is not possible"
+				<< " on the entered route" << endl;
+		}
+	}
+
 	else {
 		cout << "The load is too heavy\n";
 	}
