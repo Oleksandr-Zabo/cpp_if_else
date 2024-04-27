@@ -36,9 +36,11 @@ int main()
 	}
 
 	else if (weight < 1000) {
-		if (lenth_A_B <= capacity/4 || lenth_B_C <= capacity/4) {
+		if ((lenth_A_B <= (capacity/4)) && (lenth_B_C <= (capacity/4))) {
 			need_B_C = lenth_B_C*4;
+			
 
+			//fix
 			need_fuel = need_B_C - (capacity/4 - lenth_A_B*4);
 			(need_fuel > 0) ? cout << "You should refuel " << need_fuel << " litrs" << endl : 
 				cout << "You don't need to refuel(0)\n";
