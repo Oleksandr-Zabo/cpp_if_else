@@ -31,9 +31,6 @@ int main()
 
 
 
-
-	
-
 	if (weight < 0 || lenth_A_B < 0 || lenth_B_C < 0) {
 		cout << "Incorrect data" << endl;
 	}
